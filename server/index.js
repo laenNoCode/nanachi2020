@@ -1,7 +1,7 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const databaseCreator = require("./database/databaseCreator")
-
+const session = require("./middlewares/laenSession/session")
 
 databaseCreator.createDB("./database/data.db").then(()=>{
   console.log("database created")
@@ -17,10 +17,10 @@ app.use(bodyParser.urlencoded({
   }));
 app.use(bodyParser.json());
 app.use(bodyParser.raw());
-
-app.use("/api/weather", weather.weather)
-app.use(login.login)
-app.use(login.create)
+app.use(session.session)
+app.post("/api/weather", weather.weather)
+app.post("/api/createLogin",login.create)
+app.post("/api/login",login.login)
 
 
 app.use(express.static("./public"))
