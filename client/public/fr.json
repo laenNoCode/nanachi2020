@@ -1,0 +1,74 @@
+{
+    "homePage":{
+        "title":"My Wave",
+        "signupButton":"S'inscrire",
+        "login":"Connexion",
+        "logout":"Se déconnecter",
+        "menu":"Menu",
+        "author":"Site par Team Nanachi",
+        "beaches":"Plages",
+        "home":"Page d'accueuil",
+        "profile":"Mon profil"
+    },
+    "signUpPage":{
+        "title":"My Wave",
+        "signup":"S'inscrire",
+        "login":"Se connecter",
+        "logout":"Se deconnecter",
+        "menu":"Menu",
+        "name":"Nom",
+        "email":"Adresse mail",
+        "pwd":"Mot de passe",
+        "confirm":"confirmer",
+        "cancel":"Annuler",
+        "save":"enregistrer"
+    },
+    "profilePage":{
+        "title":"My Wave",
+        "profile":"Profil",
+        "signup":"S'inscrire",
+        "login":"Se connecter",
+        "logout":"Se deconnecter",
+        "menu":"Menu",
+        "name":"Nom",
+        "email":"Adresse mail",
+        "pwd":"Mot de passe",
+        "Edit":"Modifier"
+    },
+    "EditProfilePage":{
+        "title":"My Wave",
+        "signup":"S'inscrire",
+        "login":"Se connecter",
+        "logout":"Se deconnecter",
+        "menu":"Menu",
+        "name":"Nom",
+        "email":"Adresse mail",
+        "pwd":"Mot de passe",
+        "old":"Ancien",
+        "new":"Nouveau",
+        "cancel":"Annuler",
+        "save":"enregistrer"
+    },
+    "beachesPage":{
+        "title":"My Wave",
+        "signup":"S'inscrire",
+        "login":"Se connecter",
+        "logout":"Se déconnecter",
+        "menu":"Menu",
+        "beaches":"Plages",
+        "addBeach":"Ajouter plage",
+        "coeff":"coeff",
+        "tides":"Marées",
+        "weather":"Météo",
+        "reviews":"Avis",
+        "clean":"Propreté",
+        "waves":"Vagues",
+        "rateThis":"Noter cette plage"
+    },
+    "defeatPage":{
+        "home":"Page d'accueuil"
+    },
+    "victoryPage":{
+        "home":"Page d'accueuil"
+    }
+  }

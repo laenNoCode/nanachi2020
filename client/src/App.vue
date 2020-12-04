@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <home language="fr" @emit="togglemenu"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import home from './components/home.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    home,
+    methods:{
+      togglemenu: function(){
+        console.log("menu toggled")
+      }
+    }
   }
 }
 </script>

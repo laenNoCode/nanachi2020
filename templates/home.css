@@ -1,0 +1,41 @@
+body{
+    margin:0px;
+    background-color:#9999FF;
+    background-image : url('BackgroundHome.jpg');
+    background-size : 100%;
+    background-repeat: no-repeat;
+    }
+
+    .title {
+        color :#ffffff;
+        font-family : "Helvetica";
+        font-size : 7.5vw;
+    }
+
+    .btn {
+        border: none;
+        border-radius : 7px;
+        background-color: transparent;
+        padding: 2px 10px;
+        font-size: 4vw;
+        font-family: "Helvetica";
+        color : #ffffff;
+        cursor: pointer;
+        display: inline-block;
+      }
+      
+      /* On mouse-over */
+      .btn:hover {background:#629bdc3f;}
+
+      .btn:active {border: none;}
+
+
+      @keyframes up-out {
+        0%   {font-size:2px}
+        100% {font-size:60px}
+      }
+
+      .up-outed {
+          animation-name : up-out;
+          animation-duration: 4s;
+      }
