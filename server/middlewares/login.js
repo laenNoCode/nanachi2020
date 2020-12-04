@@ -13,29 +13,34 @@ exports.login = async function(req,res,next){
                 console.log(err)
             }
         })
-
-        await db.each("SELECT * FROM user", (err,data) => {
-            if (data.username == req.body.username ){
-                const hash = crypto.createHmac('sha256', req.body.password).update(data.salt).digest('hex');
-                console.log("found")
-                if (data.hash == hash){
-                    req.session.id = data.id
+        db.serialize(() => {
+            db.each("SELECT * FROM user", (err,data) => {
+                if (data.username == req.body.username ){
+                    const hash = crypto.createHmac('sha256', req.body.password).update(data.salt).digest('hex');
+                    
+                    if (data.hash == hash){
+                        req.session.id = data.id
+                        console.log("found")
+                        console.log("sending response")
+                        res.set("Content-type", "application/JSON")
+                        res.set("Access-Control-Allow-Origin", "*")
+                        res.send(JSON.stringify({"success": "user identified"}))
+                        res.end()
+                    }
+                    
                 }
-                exists = true
-            }
+            })
         })
+        
+        
         db.close()
+        
+        
     }
-    if (exists){
-        console.log("sending response")
-        res.set("Content-type", "application/JSON")
-        res.set("Access-Control-Allow-Origin", "*")
-        res.send(JSON.stringify({"success": "user identified"}))
-        res.end()
-    }
+    
 }
 
-exports.create = async function(req,res,next){
+exports.create = function(req,res,next){
     
     const sqlite = require("sqlite3").verbose()
 
@@ -50,7 +55,7 @@ exports.create = async function(req,res,next){
         salt = ""
         data = res.headersSent
         console.log({sent:data})
-        await db.each("SELECT * FROM user", (err,data) => {
+        db.each("SELECT * FROM user", (err,data) => {
             if (! res.headersSent &&  data.username == req.body.username ){
                 data = res.headersSent
                 console.log({sent:data})
