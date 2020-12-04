@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-    <home :language="language" v-on:toggle="togglemenu()" v-if="page=='home'"/>
+    <home :language="language" v-on:toggle="togglemenu()" v-if="page=='home'" @impostor="page='impostor'" @notimp="page='not_impostor'; impostorLang()"/>
     <profile :language="language" @edit="page='edit'" v-on:toggle="togglemenu()" v-if="page=='profile'"/>
     <edit :language="language" v-if="page=='edit'" @toggle="togglemenu()"/>
-  <not_impostor v-if="page=='not_impostor'"/>
-    <menut :language="language" v-if="menutoggled" @close="closemenu()" @home="page='home'; closemenu()"  @profile="page='profile';closemenu()" @beaches="page='beaches';closemenu()"/>
+  <notimpostor v-if="page=='not_impostor'" @lang="setLang" @home="page='home'"/>
+    <menut :language="language" @lang="setLang" v-if="menutoggled" @close="closemenu()" @home="page='home'; closemenu()"  @profile="page='profile';closemenu()" @beaches="page='beaches';closemenu()"/>
     
+    <impostor @lang="setLang" @home="page='home'" v-if="page=='impostor'"/>
   </div>
 </template>
 
@@ -13,8 +14,9 @@
 import home from './components/home.vue'
 import menut from "./components/menut"
 import profile from "./components/profile"
-import not_impostor from "./components/not_impostor"
+import notimpostor from "./components/notimpostor"
 import edit from "./components/profil_edit"
+import impostor from './components/impostor.vue'
 export default {
   name: 'App',
   methods:{
@@ -23,15 +25,27 @@ export default {
     },
   closemenu(){
       this.menutoggled = false
+    },
+  setLang(lang){
+    this.language = lang
+    
+  },
+  impostorLang(){
+    if (this.language.toUpperCase() == "EN"){
+      this.language = "AUS"
+    if (this.language.toUpperCase() == "FR")
+      this.language = "RF"
     }
+  }
   },
   data:function(){
     return {menutoggled:false,
     page:"home",
-    language:"FR  "}
+    language:"FR"}
   },
   components: {
-    home,menut,profile,not_impostor, edit
+    home,menut,profile,notimpostor, edit,
+    impostor
     }
   
 }

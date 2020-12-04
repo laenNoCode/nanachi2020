@@ -1,12 +1,14 @@
 <template>
     <div class="not-impostor-wrapper">
-        <div class="home-button">home</div>
+        <img src="/french.jpg" class="french_flag flag" @click="$emit('lang','RF')">
+        <img src="/eng.jpg" class="english_flag flag"  @click="$emit('lang','AUS')">
+        <div class="home-button" @click="$emit('home')">home</div>
     </div>
 </template>
 
 
 
-<style>
+<style scoped>
 .not-impostor-wrapper{
     width: 100%;
     height:100vh;
@@ -27,5 +29,18 @@
 .home-button:hover{
     color:#0274df;
     background-color: #2c99ff;
+}
+.french_flag{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.english_flag{
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+}
+.flag{
+    cursor: pointer;
 }
 </style>

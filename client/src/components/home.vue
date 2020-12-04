@@ -13,6 +13,8 @@
     <div class="btn" @click="$emit('toggle','e')"
     style="position:absolute;top:22vw;left:76vw; transform:rotate(-7deg)">
         {{trad.menu}}</div>
+<img src="/green.png" class="green" @click="$emit('impostor')">
+<img src="/red.png" class="red" @click="$emit('notimp')">
 
 
 </div>
@@ -88,5 +90,16 @@ body{
           animation-name : up-out;
           animation-duration: 4s;
       }
-
+.green{
+  width: 2vw;
+  position: absolute;
+  top:275px;
+  right: 670px;
+}
+.red{
+  width: 3vw;
+  position: absolute;
+  top:400px;
+  right:150px;
+}
 </style>

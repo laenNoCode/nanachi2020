@@ -1,11 +1,13 @@
 <template>
     <div id="menut" class="menu-wrapper">
-        
+    <img src="/french.jpg" class="french_flag flag" @click="$emit('lang','fr'); refresh()"/>
+    <img src="/eng.jpg" class="english_flag flag"  @click="$emit('lang','en'); refresh()"/>
     <div class="close" @click="$emit('close')"></div>
      <div class="ship">
     <div class="ship-middle-button" @click="$emit('home')"><br>{{trad.home}}</div>
     <div class="ship-right-button" @click="$emit('profile')"><br>{{trad.profile}}</div>
     <div class="ship-top-button" @click="$emit('beaches')"><br>{{trad.beaches}}</div>
+    
      </div>
     </div>
 </template>
@@ -22,8 +24,14 @@ export default {
     }
   }
 },
+methods:{
+    refresh(){
+        fetch(this.language + ".json").then((d) =>{d.json().then((data)=>{
+      this.trad = data.menu
+    }) })
+    }
+},
 mounted() {
-    console.log()
     fetch(this.language + ".json").then((d) =>{d.json().then((data)=>{
       this.trad = data.menu
     }) })
@@ -81,5 +89,18 @@ mounted() {
     width: 350px;
     bottom: 415px;
     left:290px;
+}
+.french_flag{
+    position: absolute;
+    bottom: 10px;
+    left: 500px;
+}
+.english_flag{
+    position: absolute;
+    bottom: 10px;
+    left: 700px;
+}
+.flag{
+    cursor: pointer;
 }
 </style>
