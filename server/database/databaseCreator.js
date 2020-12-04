@@ -13,14 +13,21 @@ exports.createDB = async function(path){
     db.run("CREATE TABLE IF NOT EXISTS userBeachComment(userID INTEGER, beachID INTEGER,date DATE, clean INTEGER, wave INTEGER, comment TEXT, anonymous BOOLEAN)")
 
     db.each("SELECT COUNT(*) FROM beach", (err, data) => {
-       if (data['COUNT(*)'] == 0){
-        request = "INSERT INTO beach(name) VALUES ('Maseille') "
-        db.run(request)
-        request = "INSERT INTO beach(name) VALUES ('Paimpole') "
-        db.run(request)
-       }
+       if (data != undefined) {
+           if (data['COUNT(*)'] == 0)
+           {
+            request = "INSERT INTO beach(name) VALUES ('Marseille') "
+            db.run(request)
+            request = "INSERT INTO beach(name) VALUES ('Paimpol') "
+            db.run(request)
+            }
+        }else {
+            request = "INSERT INTO beach(name) VALUES ('Marseille') "
+            db.run(request)
+            request = "INSERT INTO beach(name) VALUES ('Paimpol') "
+            db.run(request)
+        }
     })
-
 
     db.close()
 };
