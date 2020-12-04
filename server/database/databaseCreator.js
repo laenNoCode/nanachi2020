@@ -10,6 +10,17 @@ exports.createDB = async function(path){
     db.run("CREATE TABLE IF NOT EXISTS userInfo(userID INTEGER, name TEXT, email TEXT)")
     db.run("CREATE TABLE IF NOT EXISTS beach(beachID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)")
     db.run("CREATE TABLE IF NOT EXISTS userBeach(userID INTEGER, beachID INTEGER)")
-    db.run("CREATE TABLE IF NOT EXISTS userBeachComment(userID INTEGER, beachID INTEGER, clean INTEGER, wave INTEGER, comment TEXT, anonymous BOOLEAN)")
+    db.run("CREATE TABLE IF NOT EXISTS userBeachComment(userID INTEGER, beachID INTEGER,date DATE, clean INTEGER, wave INTEGER, comment TEXT, anonymous BOOLEAN)")
+
+    db.each("SELECT COUNT(*) FROM beach", (err, data) => {
+       if (data['COUNT(*)'] == 0){
+        request = "INSERT INTO beach(name) VALUES ('Maseille') "
+        db.run(request)
+        request = "INSERT INTO beach(name) VALUES ('Paimpole') "
+        db.run(request)
+       }
+    })
+
+
     db.close()
 };
