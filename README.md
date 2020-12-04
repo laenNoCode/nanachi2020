@@ -24,3 +24,5 @@ fonctionnement général de l'application : front end vuejs, back end express js
 gestion de l'inscription utilisateur
 gestion de base de données,
 une api exposée
+
+NE PAS CLIQUER SUR BEACH
