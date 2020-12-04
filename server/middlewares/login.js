@@ -1,7 +1,7 @@
 base64url="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
 const crypto = require("crypto")
 exports.login = async function(req,res,next){
-    console.log(req.session.id)
+    console.log({sess : req.session})
     bodyKeys = Object.keys(req.body)
     console.log(JSON.stringify(req.session))
     console.log({bodyKeys,in:bodyKeys.includes("username")})
@@ -19,7 +19,7 @@ exports.login = async function(req,res,next){
                     const hash = crypto.createHmac('sha256', req.body.password).update(data.salt).digest('hex');
                     
                     if (data.hash == hash){
-                        req.session.id = data.id
+                        req.session.id = data.userID
                         console.log("found")
                         console.log("sending response")
                         res.set("Content-type", "application/JSON")

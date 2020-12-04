@@ -1,5 +1,5 @@
 {
-    "sessionTime": 6000,
-    "refreshRate": 800,
+    "sessionTime": 60,
+    "refreshRate": 80,
     "sessionName": "laenSession"
 }

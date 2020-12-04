@@ -16,6 +16,7 @@ function session(req, res, next){
     now = Math.floor(Date.now()/1000)
     if (session.sessions === undefined)
         session.sessions = {}
+    console.log({cookie : req.headers.cookie})
     if (session.lastRefresh === undefined)
         session.lastRefresh = now
     if (now - session.lastRefresh >= config.refreshRate)

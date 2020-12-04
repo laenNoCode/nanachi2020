@@ -19,6 +19,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.raw());
 app.use(session.session)
 app.post("/api/weather", weather.weather)
+
 app.post("/api/createLogin",login.create)
 app.post("/api/login",login.login)
 
