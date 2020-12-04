@@ -7,7 +7,7 @@ exports.createDB = async function(path){
         }
     })
     db.run("CREATE TABLE IF NOT EXISTS user(userID INTEGER PRIMARY KEY AUTOINCREMENT,username TEXT, salt TEXT, hash TEXT)")
-    db.run("CREATE TABLE IF NOT EXISTS userInfo(userID INTEGER, name TEXT, email TEXT, profilePicture TEXT)")
+    db.run("CREATE TABLE IF NOT EXISTS userInfo(userID INTEGER, name TEXT, email TEXT)")
     db.run("CREATE TABLE IF NOT EXISTS beach(beachID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)")
     db.run("CREATE TABLE IF NOT EXISTS userBeach(userID INTEGER, beachID INTEGER)")
     db.run("CREATE TABLE IF NOT EXISTS userBeachComment(userID INTEGER, beachID INTEGER, clean INTEGER, wave INTEGER, comment TEXT, anonymous BOOLEAN)")

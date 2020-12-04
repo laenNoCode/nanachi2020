@@ -86,10 +86,21 @@ exports.create = function(req,res,next){
         console.log("creating hash")
         const hash = crypto.createHmac('sha256', req.body.password).update(salt).digest('hex');
         request = "INSERT INTO user(username, salt, hash) VALUES ('" + req.body.username + "','" + salt + "','" + hash + "')"
-        console.log(request)
-        db.run(request)
+        db.serialize(() =>{
+            db.run(request)
+            db.each("SELECT userID from user where username='" + req.body.username + "'", (err,data) =>{
+                console.log(data)
+                request = "INSERT INTO userInfo(userID, name, email) VALUES (" + data.userID + ",'placeholder','placeholder')"
+                console.log(request)
+                db.run(request)
+                res.set("Content-type", "application/JSON")
+            res.set("Access-Control-Allow-Origin", "*")
+            res.json({"success": "successfully created user"})
+            res.send()
+            })
+        })
         
-        db.close()
+        
 
     }
     //next()
