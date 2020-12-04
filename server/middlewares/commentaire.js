@@ -41,7 +41,6 @@ exports.importation = async function(req,res,next){
 }
 
 
-
 exports.publication = async function(req,res,next){
     const sqlite = require("sqlite3").verbose()
 
@@ -72,5 +71,48 @@ exports.publication = async function(req,res,next){
         })
 
     }
+
+}
+
+exports.mean = async function(req,res,next){
+    const sqlite = require("sqlite3").verbose()
+
+    bodyKeys = Object.keys(req.body)
+    if (bodyKeys.includes("beach")){
+        let db = new sqlite.Database("./database/data.db", (err) => {
+            if (err){
+                console.log(err)
+            }
+        })
+        if (! /^([a-z0-9A-Z]{1,})$/.test(req.body.beach))
+        {
+            res.set("Content-type", "application/JSON")
+            res.set("Access-Control-Allow-Origin", "*")
+            res.json({"error": "beach is not allowed"})
+            return false
+        }
+        
+        var request1 = "SELECT beachID FROM beach WHERE name= '"  + req.body.beach + "'"
+        db.all(request1, (err,data) => {
+            if (err){
+                console.log(err)
+            }
+            if (data[0] == undefined ){
+                res.set("Content-type", "application/JSON")
+                res.set("Access-Control-Allow-Origin", "*")
+                res.json({"error": "unknown beach"})
+                return false
+            } else {
+                var request2 = "SELECT avg(clean),avg(wave) FROM userBeachComment GROUP BY beachID HAVING beachID = '"+ data[0]["beachID"] + "'"
+                db.all(request2, (err,data) => {
+                    res.set("Content-type", "application/JSON")
+                    res.set("Access-Control-Allow-Origin", "*")
+                    res.send(JSON.stringify(data))
+                })
+            }   
+        })
+    }
+
+
 
 }

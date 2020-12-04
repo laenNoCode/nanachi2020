@@ -25,6 +25,7 @@ app.post("/api/createLogin",login.create)
 app.post("/api/login",login.login)
 app.post("/api/commentaire",commentaire.publication)
 app.post("/api/importCommentaire",commentaire.importation)
+app.post("/api/meanCommentaire",commentaire.mean)
 
 
 app.use(express.static("./public"))
