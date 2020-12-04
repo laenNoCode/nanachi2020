@@ -1,14 +1,11 @@
 {
     "homePage":{
         "title":"My Wave",
-        "signupButton":"S'inscrire",
+        "signup":"S'inscrire",
         "login":"Connexion",
         "logout":"Se déconnecter",
         "menu":"Menu",
-        "author":"Site par Team Nanachi",
-        "beaches":"Plages",
-        "home":"Page d'accueuil",
-        "profile":"Mon profil"
+        "author":"Site par Team Nanachi"
     },
     "signUpPage":{
         "title":"My Wave",
@@ -41,6 +38,7 @@
         "login":"Se connecter",
         "logout":"Se deconnecter",
         "menu":"Menu",
+        "profile":"Profil",
         "name":"Nom",
         "email":"Adresse mail",
         "pwd":"Mot de passe",
@@ -58,17 +56,27 @@
         "beaches":"Plages",
         "addBeach":"Ajouter plage",
         "coeff":"coeff",
-        "tides":"Marées",
-        "weather":"Météo",
-        "reviews":"Avis",
         "clean":"Propreté",
         "waves":"Vagues",
         "rateThis":"Noter cette plage"
+    },
+    "searchPage":{
+        "title":"My Wave",
+        "signup":"S'inscrire",
+        "login":"Se connecter",
+        "logout":"Se deconnecter",
+        "menu":"Menu",
+        "beaches":"Plages"
     },
     "defeatPage":{
         "home":"Page d'accueuil"
     },
     "victoryPage":{
         "home":"Page d'accueuil"
+    },
+    "menu":{
+        "home":"Page d'accueuil",
+        "beaches":"Plages",
+        "profile":"Profil"
     }
   }

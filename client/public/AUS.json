@@ -1,0 +1,82 @@
+{
+  "homePage":{
+      "title":"ǝʌɐʍ ʎɯ",
+      "signup":"dn uƃıs",
+      "login":"uı ƃoן",
+      "logout":"ʇno ƃoן",
+      "menu":"nuǝɯ",
+      "author":"ıɥɔɐuɐu ɯɐǝʇ ʎq ǝpɐɯ"
+  },
+  "signUpPage":{
+      "title":"ǝʌɐʍ ʎɯ",
+      "signup":"dn uƃıs",
+      "login":"uı ƃoן",
+      "logout":"ʇno ƃoן",
+      "menu":"nuǝɯ",
+      "name":"ǝuɐɯ",
+      "email":"ssǝɹppɐ ןıɐɯǝ",
+      "pwd":"pɹoʍssɐd",
+      "confirm":"ɯɹıɟuoɔ",
+      "cancel":"ןǝɔuɐɔ",
+      "save":"ǝʌɐs"
+  },
+  "profilePage":{
+      "title":"ǝʌɐʍ ʎɯ",
+      "signup":"dn uƃıs",
+      "login":"uı ƃoן",
+      "logout":"ʇno ƃoן",
+      "menu":"nuǝɯ",
+      "profile":"ǝןıɟoɹd",
+      "name":"nuǝɯ",
+      "email":"ssǝɹppɐ ןıɐɯǝ",
+      "pwd":"pɹoʍssɐd",
+      "Edit":"ʇıpǝ"
+  },
+  "EditProfilePage":{
+      "title":"ǝʌɐʍ ʎɯ",
+      "signup":"dn uƃıs",
+      "login":"uı ƃoן",
+      "logout":"ʇno ƃoן",
+      "menu":"nuǝɯ",
+      "profile":"ǝןıɟoɹd",
+      "name":"nuǝɯ",
+      "email":"ssǝɹppɐ ןıɐɯǝ",
+      "pwd":"pɹoʍssɐd",
+      "old":"pןo",
+      "new":"ʍǝu",
+      "cancel":"ןǝɔuɐɔ",
+      "save":"ǝʌɐs"
+  },
+  "beachesPage":{
+      "title":"ǝʌɐʍ ʎɯ",
+      "signup":"dn uƃıs",
+      "login":"uı ƃoן",
+      "logout":"ʇno ƃoן",
+      "menu":"nuǝɯ",
+      "beaches":"sǝɥɔɐǝq",
+      "addBeach":"ɥɔɐǝq ppɐ",
+      "coeff":"ɟɟǝoɔ",
+      "clean":"ssǝuıןuɐǝןɔ",
+      "waves":"sǝʌɐʍ",
+      "rateThis":"sǝʌɐʍ"
+  },
+  "searchPage":{
+      "title":"ǝʌɐʍ ʎɯ",
+      "signup":"dn uƃıs",
+      "login":"uı ƃoן",
+      "logout":"ʇno ƃoן",
+      "menu":"nuǝɯ",
+      "beaches":"sǝɥɔɐǝq"
+  },
+  "defeatPage":{
+      "home":"ǝɯoɥ"
+  },
+  "victoryPage":{
+      "home":"ǝɯoɥ"
+  },
+  "menu":{
+      "home":"ǝɯoɥ",
+      "beaches":"sǝɥɔɐǝq",
+      "profile":"ǝןıɟoɹd"
+  }
+}

@@ -1,0 +1,82 @@
+{
+    "homePage":{
+        "title":"ǝʌɐM ʎW",
+        "signup":"ǝɹᴉɹɔsuᴉ,S",
+        "login":"uoᴉxǝuuoɔ",
+        "logout":"uoᴉxǝuuoɔép",
+        "menu":"nuǝW",
+        "author":"ᴉɥɔɐuɐN ɯɐǝ┴ ɹɐd ǝʇᴉS"
+    },
+    "signUpPage":{
+        "title":"ǝʌɐM ʎW",
+        "signup":"ǝɹᴉɹɔsuᴉ,S",
+        "login":"uoᴉxǝuuoɔ",
+        "logout":"uoᴉxǝuuoɔép",
+        "menu":"nuǝW",
+        "name":"ɯoN",
+        "email":"lᴉɐɯ ǝssǝɹp∀",
+        "pwd":"ǝssɐd ǝp ʇoW",
+        "confirm":"ɹǝɯɹᴉɟuoɔ",
+        "cancel":"ɹǝlnuu∀",
+        "save":"ɹǝɹʇsᴉƃǝɹuǝ"
+    },
+    "profilePage":{
+        "profile":"lᴉɟoɹԀ",
+        "title":"ǝʌɐM ʎW",
+        "signup":"ǝɹᴉɹɔsuᴉ,S",
+        "login":"uoᴉxǝuuoɔ",
+        "logout":"uoᴉxǝuuoɔép",
+        "menu":"nuǝW",
+        "name":"ɯoN",
+        "email":"lᴉɐɯ ǝssǝɹp∀",
+        "pwd":"ǝssɐd ǝp ʇoW",
+        "Edit":"ɹǝᴉɟᴉpoW"
+    },
+    "EditProfilePage":{
+        "title":"ǝʌɐM ʎW",
+        "signup":"ǝɹᴉɹɔsuᴉ,S",
+        "login":"uoᴉxǝuuoɔ",
+        "logout":"uoᴉxǝuuoɔép",
+        "menu":"nuǝW",
+        "profile":"lᴉɟoɹԀ",
+        "name":"ɯoN",
+        "email":"lᴉɐɯ ǝssǝɹp∀",
+        "pwd":"ǝssɐd ǝp ʇoW",
+        "old":"uǝᴉɔu∀",
+        "new":"nɐǝʌnoN",
+        "cancel":"ɹǝlnuu∀",
+        "save":"ɹǝɹʇsᴉƃǝɹuǝ"
+    },
+    "beachesPage":{
+        "title":"ǝʌɐM ʎW",
+        "signup":"ǝɹᴉɹɔsuᴉ,S",
+        "login":"uoᴉxǝuuoɔ",
+        "logout":"uoᴉxǝuuoɔép",
+        "menu":"nuǝW",
+        "beaches":"sǝƃɐlԀ",
+        "addBeach":"ǝƃɐld ɹǝʇnoɾ∀",
+        "coeff":"ɟɟǝoɔ",
+        "clean":"éʇǝɹdoɹԀ",
+        "waves":"sǝnƃɐΛ",
+        "rateThis":"ǝƃɐld ǝʇʇǝɔ ɹǝʇoN"
+    },
+    "searchPage":{
+        "title":"ǝʌɐM ʎW",
+        "signup":"ǝɹᴉɹɔsuᴉ,S",
+        "login":"uoᴉxǝuuoɔ",
+        "logout":"uoᴉxǝuuoɔép",
+        "menu":"nuǝɯ",
+        "beaches":"sǝƃɐlԀ"
+    },
+    "defeatPage":{
+        "home":"lᴉnǝnɔɔɐ,p ǝƃɐԀ"
+    },
+    "victoryPage":{
+        "home":"lᴉnǝnɔɔɐ,p ǝƃɐԀ"
+    },
+    "menu":{
+        "home":"lᴉnǝnɔɔɐ,p ǝƃɐԀ",
+        "beaches":"sǝƃɐlԀ",
+        "profile":"lᴉɟoɹԀ"
+    }
+  }

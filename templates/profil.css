@@ -1,0 +1,73 @@
+body{
+    margin:0px;
+    background-color:#2586e6;
+    background-image : url('BackgroundProfil.jpg');
+    background-size : 100%;
+    background-repeat: no-repeat;
+    }
+
+    .title {
+        color :#ffffff;
+        font-family : "Helvetica";
+        font-size : 5vw;
+    }
+
+    .subtitle {
+        color: #ffffff;
+        font-family: "Helvetica";
+        font-size: 3.5vw;
+        position: absolute;
+        top:12vw;
+        left:3vw;
+    }
+
+    .btn {
+        border: none;
+        border-radius : 7px;
+        background-color: transparent;
+        padding: 2px 10px;
+        font-size: 3vw;
+        font-family: "Helvetica";
+        color : #ffffff;
+        cursor: pointer;
+        display: inline-block;
+      }
+      
+      /* On mouse-over */
+      .btn:hover {background:#629bdc3f;}
+
+      div.frame{
+        border-style: solid;
+        border-color: #ffffff;
+        width: 70vw;
+        border-radius: 7px;
+        border-width: 0.5vw;
+
+        position: absolute;
+        top:20vw;
+        left:10vw;
+    }
+
+
+        div.line{
+            margin: 2vw;
+            font-family: "Helvetica";
+            font-size: 2.5vw;
+        }
+
+        span.intitule{
+            display: inline-block;
+            width: 30vw;
+            color: #ffffff
+        }
+
+        input.field{
+            background-color: #d4fcff;
+            width: 30vw;
+            height: 2vw;
+        }
+
+
+        .action {
+            font-size: 2vw;
+        }

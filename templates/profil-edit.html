@@ -11,20 +11,20 @@ style="position:absolute;top:4vw;left:5vw;">
     My<span style="color: #dafcff"> Wave</span></div>
 
 <div class="subtitle">
-Login
+Profil
 </div>
 
 <body>
     <!--trad.nomdepage["sinscrire"]-->
     <div class="btn" id="sub"
         style="position:absolute;top:8.5vw;left:28vw; transform:rotate(-2deg)"
-        onclick="subscribe()">
-        S'inscrire</div>
+        onclick="profil()">
+        Profil</div>
 
     <div class="btn"
         style="position:absolute;top:5vw;left:54vw; transform:rotate(-11deg)"
-        onclick="login()">
-        Login</div>
+        onclick="logout()">
+        Logout</div>
     
     <div class="btn"
         style="position:absolute;top:2.5vw;left:76vw; transform:rotate(2deg)"
@@ -36,18 +36,26 @@ Login
     
         <div class="frame">
             <div class="line">
+                <span class="intitule">Pseudo</span>
+                <input class="field"></input>
+            </div>
+            <div class="line">
                 <span class="intitule">E-mail</span>
                 <input class="field"></input>
             </div>
             <div class="line">
-                <span class="intitule">Mot de Passe</span>
+                <span class="intitule">Ancien Mot de Passe</span>
+                <input class="field"></input>
+            </div>
+            <div class="line">
+                <span class="intitule">Nouveau Mot de Passe</span>
                 <input class="field"></input>
             </div>
         </div>
 
-        <div style="position:absolute;top:35vw;left:60vw;">
-            <span class="btn action">Annuler</span>
-            <span class="btn action">Confirmer</span>
+        <div style="position:absolute;top:45vw;left:60vw;">
+            <span class="btn action" onclick="profil()">Annuler</span>
+            <span class="btn action" onclick="profil()">Confirmer</span>
         </div>
 
 

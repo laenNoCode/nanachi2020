@@ -5,12 +5,12 @@
 
     <!--trad.nomdepage["sinscrire"]-->
     <div class="btn" id="sub" style="position:absolute;top:30vw;left:28vw; transform:rotate(2deg)">
-       {{trad.signupButton}}</div>
+       {{trad.signup}}</div>
 
     <div class="btn" style="position:absolute;top:27vw;left:54vw; transform:rotate(-14deg)">
         {{trad.login}}</div>
     
-    <div class="btn" @click="togglemenu"
+    <div class="btn" @click="$emit('toggle','e')"
     style="position:absolute;top:22vw;left:76vw; transform:rotate(-7deg)">
         {{trad.menu}}</div>
 
@@ -26,7 +26,7 @@ export default {
       emit:{},
       trad:{
         "title":"My Wave",
-        "signupButton":"Sub",
+        "signup":"Sub",
         "login":"connection",
         "logout":"Se déconnecter",
         "menu":"Menu",
@@ -35,11 +35,6 @@ export default {
         "home":"Page d'accueuil",
         "profile":"Mon profil"
       }
-    }
-  },
-  methods:{
-    togglemenu: function(){
-      this.$emit('emit')
     }
   },
   mounted() {

@@ -1,0 +1,82 @@
+{
+    "homePage":{
+        "title":"my w4v3",
+        "signup":"519n up",
+        "login":"109 1n",
+        "logout":"109 0u7",
+        "menu":"m3nu",
+        "author":"m4d3 8y 734m n4n4ch1"
+    },
+    "signUpPage":{
+        "title":"my w4v3",
+        "signup":"519n up",
+        "login":"109 1n",
+        "logout":"109 0u7",
+        "menu":"m3nu",
+        "name":"Mane",
+        "email":"3m411 4dd235",
+        "pwd":"p455w02d",
+        "confirm":"confirm",
+        "cancel":"c4nc31",
+        "save":"54v3"
+    },
+    "profilePage":{
+        "title":"my w4v3",
+        "profile":"p20f113",
+        "signup":"519n up",
+        "login":"109 1n",
+        "logout":"109 0u7",
+        "menu":"m3nu",
+        "name":"N4m3",
+        "email":"3m411 4dd235",
+        "pwd":"p455w02d",
+        "Edit":"3d17"
+    },
+    "EditProfilePage":{
+        "title":"my w4v3",
+        "signup":"519n up",
+        "login":"109 1n",
+        "logout":"109 0u7",
+        "profile":"p20f113",
+        "menu":"m3nu",
+        "name":"n4m3",
+        "email":"3m411 4dd2355",
+        "pwd":"p455w02d",
+        "old":"01d",
+        "new":"N3w",
+        "cancel":"c4nc31",
+        "save":"54v3"
+    },
+    "beachesPage":{
+        "title":"my w4v3",
+        "signup":"519n up",
+        "login":"109 1n",
+        "logout":"109 0u7",
+        "menu":"m3nu",
+        "beaches":"834ch35",
+        "addBeach":"4dd 834ch",
+        "coeff":"c03ff",
+        "clean":"c134n11n355",
+        "waves":"w4v35",
+        "rateThis":"2473 7h15 834ch"
+    },
+    "searchPage":{
+        "title":"my w4v3",
+        "signup":"519n up",
+        "login":"109 1n",
+        "logout":"109 0u7",
+        "menu":"m3nu",
+        "beaches":"834ch35"
+    },
+    "defeatPage":{
+        "home":"h0m3"
+    },
+    "victoryPage":{
+        "home":"h0m3"
+    },
+    "menu":{
+        "home":"h0m3",
+        "beaches":"834ch35",
+        "profile":"p20f113"
+    }
+  }

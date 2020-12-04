@@ -1,0 +1,82 @@
+{
+    "homePage":{
+        "title":"My Wave",
+        "signup":"Sign up",
+        "login":"Log in",
+        "logout":"Log out",
+        "menu":"Menu",
+        "author":"Made by Team Nanachi"
+    },
+    "signUpPage":{
+        "title":"My Wave",
+        "signup":"Sign up",
+        "login":"Log in",
+        "logout":"Log out",
+        "menu":"Menu",
+        "name":"Name",
+        "email":"Email address",
+        "pwd":"Password",
+        "confirm":"confirm",
+        "cancel":"Cancel",
+        "save":"Save"
+    },
+    "profilePage":{
+        "title":"My Wave",
+        "signup":"Sign up",
+        "login":"Log in",
+        "logout":"Log out",
+        "menu":"Menu",
+        "profile":"Profile",
+        "name":"Name",
+        "email":"Email address",
+        "pwd":"Password",
+        "Edit":"Edit"
+    },
+    "EditProfilePage":{
+        "title":"My Wave",
+        "signup":"Sign up",
+        "login":"Log in",
+        "logout":"Log out",
+        "menu":"Menu",
+        "profile":"Profile",
+        "name":"Name",
+        "email":"Email address",
+        "pwd":"Password",
+        "old":"Old",
+        "new":"New",
+        "cancel":"Cancel",
+        "save":"Save"
+    },
+    "beachesPage":{
+        "title":"My Wave",
+        "signup":"Sign up",
+        "login":"Log in",
+        "logout":"Log out",
+        "menu":"Menu",
+        "beaches":"Beaches",
+        "addBeach":"Add beach",
+        "coeff":"coeff",
+        "clean":"Cleanliness",
+        "waves":"waves",
+        "rateThis":"Rate this beach"
+    },
+    "searchPage":{
+        "title":"My Wave",
+        "signup":"Sign up",
+        "login":"Log in",
+        "logout":"Log out",
+        "menu":"Menu",
+        "beaches":"Beaches"
+    },
+    "defeatPage":{
+        "home":"Home"
+    },
+    "victoryPage":{
+        "home":"Home"
+    },
+    "menu":{
+        "home":"Home",
+        "beaches":"Beaches",
+        "profile":"Profile"
+    }
+  }
