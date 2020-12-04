@@ -1,10 +1,10 @@
 base64url="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
 const crypto = require("crypto")
 exports.login = async function(req,res,next){
-    console.log({sess : req.session})
+    //console.log({sess : req.session})
     bodyKeys = Object.keys(req.body)
-    console.log(JSON.stringify(req.session))
-    console.log({bodyKeys,in:bodyKeys.includes("username")})
+    //console.log(JSON.stringify(req.session))
+    //console.log({bodyKeys,in:bodyKeys.includes("username")})
     exists = false
     if (bodyKeys.includes("username") && bodyKeys.includes("password")){
         const sqlite = require("sqlite3").verbose()
@@ -32,9 +32,7 @@ exports.login = async function(req,res,next){
             })
         })
         
-        
         db.close()
-        
         
     }
     
