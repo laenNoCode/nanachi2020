@@ -16,15 +16,15 @@ exports.createDB = async function(path){
        if (data != undefined) {
            if (data['COUNT(*)'] == 0)
            {
-            request = "INSERT INTO beach(name) VALUES ('Marseille') "
+            request = "IF EXISTS( SELECT * FROM beach)) BEGIN INSERT INTO beach(name) VALUES ('Marseille')  END"
             db.run(request)
-            request = "INSERT INTO beach(name) VALUES ('Paimpol') "
+            request = "IF EXISTS( SELECT * FROM beach)) BEGIN INSERT INTO beach(name) VALUES ('Paimpol')  END"
             db.run(request)
             }
         }else {
-            request = "INSERT INTO beach(name) VALUES ('Marseille') "
+            request = "IF EXISTS( SELECT * FROM beach)) BEGIN INSERT INTO beach(name) VALUES ('Marseille')  END"
             db.run(request)
-            request = "INSERT INTO beach(name) VALUES ('Paimpol') "
+            request = "IF EXISTS( SELECT * FROM beach)) BEGIN INSERT INTO beach(name) VALUES ('Paimpol')  END"
             db.run(request)
         }
     })
