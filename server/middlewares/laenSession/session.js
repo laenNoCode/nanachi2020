@@ -24,6 +24,7 @@ function session(req, res, next){
         session.lastRefresh = now
     }
     sessionCookie = false;
+    if (req.headers.cookie !== undefined){
     req.headers.cookie.replace(" ", "").split(";").forEach((cookie) => {
         if (cookie.includes(config.sessionName)){
             sessionCookie = cookie.split(config.sessionName + "=")[1]
@@ -34,7 +35,7 @@ function session(req, res, next){
             }
         }
     })
-
+    }
     if (sessionCookie !==false){
         req.session = sessionCookie.session
         res.setHeader("Set-Cookie", config.sessionName + "="+ cookie + ";HttpOnly;Max-Age=" + config.sessionTime)
